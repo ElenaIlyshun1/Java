@@ -14,12 +14,13 @@ import java.io.InputStreamReader;
  * @author ІлюшинОленаСергіївна
  */
 public class Developer {
-    private String name;
-    private String city;
-    private String position;
-    private int age;
-    private int salary;
-    private String[]skills = new String[5];
+    protected String name;
+    protected String city;
+    protected String position;
+    protected int age;
+    protected int salary;
+    protected String[]skills = new String[5];
+    public Team team;
     
     public Developer(String name, String city, String position, int age, int salary){
         this.name = name;
@@ -85,16 +86,29 @@ public class Developer {
     public void CompareSalary(Developer one, Developer two){
         if (one.salary > two.salary)
         {
-             System.out.println("Devops " + one.name + "has more salary" );
+             //System.out.println("Devops " + one.name + " has more salary" );
         }
         else if (one.salary < two.salary)
         {
-             System.out.println("Devops " + two.name + "has more salary" );
+            // System.out.println("Devops " + two.name + " has more salary" );
         }
          else 
         {
-             System.out.println("Devops has same salary" );
+             //System.out.println("Devops has same salary" );
         }
     }
+    
+     class Team{
+    public String teamName;
+    public void setTeam(String teamName)
+    {
+        this.teamName = teamName;
+    }
+     public String gettTeam()
+    {
+       return this.teamName;
+    }
+    
+}
     
 }

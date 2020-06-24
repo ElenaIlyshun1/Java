@@ -33,7 +33,10 @@ public class OOP {
 //        for (int i = 0; i < devTeam.length; i++){
 //            devTeam[i].GetDeveloperInfo();
 //        }
-        
+          Junior tom = new Junior("Tom", "Rivne", "Sinior Java Developer", 25, 1000,"Starter", "using stacowerflow");
+          tom.GetDeveloperInfo();
+        Middle ben = new Middle("Ben", "Rivne", "Sinior Java Developer", 25, 1000,"Starter", "using stacowerflow","B2",2);
+        ben.GetDeveloperInfo();
     }
     
 }
